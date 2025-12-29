@@ -17,7 +17,7 @@ function App() {
   // 1. Load Models from Public Folder
   useEffect(() => {
     const loadModels = async () => {
-      const URL = '/models'; 
+      const URL = 'https://justadudewhohacks.github.io/face-api.js/models';
       try {
         await Promise.all([
           faceapi.nets.tinyFaceDetector.loadFromUri(URL),
@@ -137,4 +137,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
